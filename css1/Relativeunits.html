@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Relative-Units</title>
+    <style>
+        *{
+            margin-top: 2lh;
+        }
+        .box {
+            border: 2px solid black;
+            width: 40%;
+        }
+
+        ul li {
+            font: size 1pc;
+        }
+
+        legend {
+            font-size: 50pt;
+        }
+
+        .box2 {
+            border: 2px solid saddlebrown;
+            /* font-size: 4.5ex; */
+        }
+        fieldset
+        {
+           margin: 10vmax;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h1>heyyy</h1>
+    </div>
+    <div class="box2">
+        <h1>heyyy 2</h1>
+    </div>
+    <fieldset>
+        <legend>CSS-Relative-Units</legend>
+        <ul>
+            <li>rem = Font size of the root element px = Pixels (1 px = 0.75 pt)</li>
+            <li> % = Parent element dimensions cm = Centimeters</li>
+            <li>em = Font size of the element in = Inches</li>
+            <li>ex = x-height of the element's font pc = Picas (1 pc = 12 pt)</li>
+            <li>rlh = Line height of the root element</li>
+            <li>lh = Line height of the element pt = Points (1 pt = 1/72 in)</li>
+            <li>vb = 1% of viewport's size in the root element's block axis</li>
+            <li>vw = 1% of viewport's width</li>
+            <li>vh = 1% of viewport's height</li>
+            <li>vmax = 1% of viewport's larger dimension</li>
+            <li>vmin = 1% of viewport's smaller dimension</li>
+        </ul>
+    </fieldset>
+</body>
+
+</html>

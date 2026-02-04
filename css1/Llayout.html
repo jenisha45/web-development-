@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> types of Layouts and display property in CSS</title>
+</head>
+<style>
+    *
+    {
+        margin: 20px;
+    }
+    .Block {
+        display: block;
+        border: 1px solid black;
+    }
+
+    .Inline {
+        display: inline;
+        background-color: antiquewhite;
+    }
+
+    .InlineBlock {
+        display: inline-block;
+        border: 2px solid brown;
+        width: 90vw;
+    }
+    .container
+    {
+        display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border: 2px solid blue;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    }
+    .box
+    {
+       display: grid;
+    border: 2px solid black;
+    grid-template-columns: auto auto 20%;
+    /* grid-template-rows: 20% auto; */
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    gap: 20px 35px;/* row and column gap*/
+}
+.box p{
+    border: 1px solid black;
+    width: 50%;
+    height: 70px;
+    padding: 20px;
+}
+.navi{
+    display: flex;
+    border: 2px solid blue;
+    position: sticky;
+    top: 20px;
+
+}
+ul>li
+{
+    list-style-type: none;
+    display: inline-block;
+}
+</style>
+
+<body>
+    <!-- postioning properties -->
+     <div class="navi">
+         <nav>
+         </nav>
+     </div>
+
+     <!-- display property -->
+    <div class="Block">
+        <p>this is the example of block element. eg:div,p,h1 etc.Elements take up the full width of their
+            container.Starts on a new line.</p>
+    </div>
+    <span class="Inline">this is the example of inline element.
+        Elements take up only as much width as their content.Do not start on a new line.Example: span, a, strong.
+    </span>
+    <div class="InlineBlock">
+        <p>Combines features of block and inline.
+            Takes up only as much width as its content but allows
+            setting width, height, margin, and padding.</p>
+    </div>
+    <div class="container">
+        <p>Enables a flexible box layout (Flexbox).</p>
+        <p>hehe</p>
+    </div>
+    <div class="box">
+        <p>Enables a grid-based layout (CSS Grid). </p>
+        <p>2nd column</p>
+        <p>3rd column</p>
+        <p>for the row </p>
+    </div>
+
+</body>
+
+</html>

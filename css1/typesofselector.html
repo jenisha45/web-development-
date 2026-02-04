@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        background-color: rgb(238, 251, 251);
+        color: rgb(112, 37, 37);
+    }
+    .head
+    {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #ppp
+    {
+        text-decoration:solid;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+    }
+.container>p{
+    color: #e20d0e;
+}
+[target]
+{
+    color:rgb(128, 21, 228);
+}
+[type="button"]
+{
+color: rgb(117, 4, 26);
+}
+a:hover
+{
+    color: rgb(214, 136, 33);
+}
+li:nth-child(odd)
+{
+    color: violet;
+}
+h1,h2,h3::after
+{
+    font-weight: bolder;
+}
+ul>li{
+    list-style-type: armenian;
+}
+.box p{
+    color: #27066a;
+}
+h3+p{
+    border: 2px  solid rgb(217, 171, 102);
+}
+</style>
+<body>
+    <h3 class="head">Types of selector in CSS </h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia enim laboriosam facilis.</p>
+    <div class="container">
+        <h1 id="ppp">Selector types</h1>
+        <p class="app">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid aspernatur architecto?</p>
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">link should be red</a><br><br>
+        <input type="button" value="submit">
+    </div>
+    <div class="box">
+        <h2>combinator example
+        </h2>
+     <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <ul>
+            <li>Appple</li>
+            <li>Appple</li>
+            <li>Appple</li>
+        </ul>
+    </div>
+</body>
+</html>

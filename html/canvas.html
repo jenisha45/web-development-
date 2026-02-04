@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jenishakharbuja">
+    <meta name="revised" content="5/16/022">
+    <meta name="generator" content="Macromedia Dreamweaver 2012">
+    <meta name="description" content="HTML examples">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Canvas example</title>
+</head>
+<body>
+    <canvas id="rectangle" width="200" height="300" style="border: 4px solid red;">rectangle</canvas>
+    <canvas id="circle" width="400" height="200" style="border: 4px solid rgb(13, 3, 3);">circle</canvas>
+    <canvas id="myCanvas" width="200" height="300" style="border:2px solid #2914e6;">
+    </canvas>
+    <script>
+        var c = document.getElementById("rectangle");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+        var c = document.getElementById("circle");
+        var a = c.getContext("2d");
+        a.beginPath();
+        a.arc(190, 100, 80, 0, 2 * Math.PI);
+        a.stroke();
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d"); //Drawing Objects forcanvas
+        ctx.moveTo(0, 0); //Upper left corner co-ordinates(startingpoint of line
+        ctx.lineTo(200, 300);
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

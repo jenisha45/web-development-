@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin,padding and list properties</title>
+</head>
+<style>
+    .full{
+        margin-top: 2cm;
+        margin-right: 3cm;
+        margin-bottom: 4cm;
+        margin-left: 20%; 
+        border:3px solid aqua;
+        padding: 5% ;
+    }
+    .short
+    {
+        margin: 3cm 4cm 7cm 1cm;
+        border: 2px solid blue;
+        padding-bottom: 2pc;
+        padding-top: 3pc;
+        padding-right: 2pc;
+        padding-left: 3pc;
+    }
+    .haha1{
+        list-style-type: georgian;
+        font-size: larger;
+    }
+    .haha2
+    {
+        color: rgb(165, 128, 128);
+    }
+    .hehe1
+    {
+        list-style: lower-greek;
+    }
+    .hehe2
+    {
+          list-style-image: url("Screenshot 2025-12-06 230603.png");
+          list-style-position: inside;
+        }
+        .hehe3
+        {
+        list-style-position: outside;
+        list-style-type: "😊";
+        color: aqua;
+    }
+
+    </style>
+<body>
+    <h1>List style properties</h1>
+    <ul >
+        <li class="haha1">kind of unorder list type</li>
+        <li class="haha2">kind of unorder list type</li>
+        <li class="haha3">kind of unorder list type</li><br>
+        <ol>
+            <li class="hehe1">ordered list type </li><br>
+            <li class="hehe2">ordered list type </li>
+            <li class="hehe3">ordered list type </li>
+        </ol>
+    </ul>
+    <ol start="3" type="A" >
+        <li>Java </li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+    <ol  reversed>
+        <li>Java </li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+    <h1>Margin and padding properties </h1>
+    <p class="full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt quo veritatis porro molestiae mollitia aliquam quae quia nostrum aut ea nam doloribus minima, obcaecati laborum excepturi, debitis perferendis animi!</p>
+    <p class="short">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A enim fugiat facilis labore totam omnis assumenda dignissimos quisquam, at sunt ea fugit harum?
+    </p>
+</body>
+</html>

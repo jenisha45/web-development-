@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        margin: 0;
+        height: 80vh;
+        background-color: #7b0000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .box {
+        background-color: yellow;
+        height: 60vh;
+        border: 1px solid yellow;
+    }
+
+    .entry {
+        background-color: brown;
+        border: 1px solid brown;
+        height: 200px;
+        padding: 40px;
+        margin: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    label {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+}
+.buttons
+{
+    margin-top: 80px;
+    text-align: center;
+}
+input[type=submit],input[type=reset]
+{
+    padding: 2px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>New Users Login Here!</h1>
+            <div class="entry">
+            <form action="">
+                <div class="in">
+                    <label for="Username">Input username:</label>
+                    <input type="text" placeholder="enter your name"><br><br>
+                    <label for="Password">Input Password:</label>
+                    <input type="password" placeholder="enter your password here"><br>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+                </form>
+            </div>
+            </div>
+    </div>
+</body>
+
+</html>
