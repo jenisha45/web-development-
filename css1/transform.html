@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container
+    {
+         border: 1px solid;
+        height: 200vh;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap:50px;
+    }
+    .box1
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: rotateX(30deg);
+        background-color: aqua;
+    }
+    .box2
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: rotateY(45deg);
+        background-color: aqua;
+    }
+    .box3
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: rotateZ(45deg);
+        background-color: aqua;
+    }
+    .box4
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: scaley(2);
+        background-color: aqua;
+    }
+    .box5
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: scaleX(2);
+        background-color: aqua;
+    }
+    .box6
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: scaleZ(2);
+        background-color: aqua;
+    }
+    .box7
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: skewX(25deg);
+        background-color: aqua;
+    }
+    .box8
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform: skewY(50deg);
+        background-color: aqua;
+    }
+    .box9
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform:translateX(30%) skewX(30deg) translateY(20%) ;
+        background-color: aqua;
+    }
+    .box10
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform:translateX(20px);
+        background-color: aqua;
+    }
+    .box11
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        transform:translateY(30px);
+        background-color: aqua;
+    }
+    .box12
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        /* transform:translateZ(30px) ; */
+        transform-origin: 30% 0%;
+        background-color: aqua;
+    }
+    .box13
+    {
+        border: 1px solid;
+        height: 20vh;
+        width: 20vw;
+        /* transform:translateZ(30px) ; */
+        transform: translate3d(12px, 50%, 3em);
+        background-color: aqua;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">rotate-x</div>
+        <div class="box2">rotate-y</div>
+        <div class="box3">rotate-z</div>
+        <div class="box4">scale-y</div>
+        <div class="box5">scale-x</div>
+        <div class="box6">scale-z</div>
+        <div class="box7">skew-x</div>
+        <div class="box8">skew-y</div>
+        <div class="box9">multiple transform</div>
+        <div class="box10">translate-X</div>
+        <div class="box11">translate-Y</div>
+        <div class="box12">transform-origin</div>
+        <div class="box13">transform-3D</div>
+        
+    </div>
+</body>
+</html>
